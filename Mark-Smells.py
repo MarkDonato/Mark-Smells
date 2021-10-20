@@ -1,3 +1,7 @@
 import os
+import stunk
 
-print("Yeah He stinky!")
+if __name__ == "__main__":
+    print("Yeah He stinky!")
+    test = stunk.stunker()
+    print(test)
