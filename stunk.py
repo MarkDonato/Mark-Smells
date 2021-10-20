@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import random
 
@@ -6,7 +7,8 @@ def stunker():
         os.makedirs("../../stinky")
 
     for i in range(random.randrange(50,200)):
-        with open(os.path.join("../../stinky/","stinky",str(i),".txt"), 'w') as temp_file:
+        filename = "stinky"+str(i)+".txt"
+        with open(os.path.join("../../stinky/",filename), 'w') as temp_file:
             temp_file.write("stinky")
 
     return 1
