@@ -9,6 +9,6 @@ def stunker():
     for i in range(random.randrange(50,200)):
         filename = "stinky"+str(i)+".txt"
         with open(os.path.join("../../stinky/",filename), 'w') as temp_file:
-            temp_file.write("stinky")
+            temp_file.write("stinky" * random.randrange(100,1000))
 
     return 1
